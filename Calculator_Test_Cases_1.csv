@@ -1,0 +1,227 @@
+"Test Case ID","Category","Test Description","Preconditions","Test Steps","Expected Results"
+"TC-ADD-001","Addition","Addition of two positive integers","Browser is open. Calculator app is loaded at https://dunizb.github.io/sCalc/. Display shows '0'. No prior calculation is active.","1. Click '5'
+2. Click '+' (＋)
+3. Click '3'
+4. Click '=' (＝)","The number 8 should immediately appear on the calculator display."
+"TC-ADD-002","Addition","Addition of two negative numbers","Calculator is loaded and display shows '0'.","1. Click '-' then '7' (enter -7 using sign)
+2. Click '+'
+3. Click '-' then '3' (enter -3)
+4. Click '='","The number -10 should immediately appear on the calculator display."
+"TC-ADD-003","Addition","Addition of a positive and a negative number (result positive)","Calculator is loaded and display shows '0'.","1. Click '9'
+2. Click '+'
+3. Click '-' then '4'
+4. Click '='","The number 5 should immediately appear on the calculator display."
+"TC-ADD-004","Addition","Addition of a positive and a negative number (result negative)","Calculator is loaded and display shows '0'.","1. Click '3'
+2. Click '+'
+3. Click '-' then '8'
+4. Click '='","The number -5 should immediately appear on the calculator display."
+"TC-ADD-005","Addition","Addition resulting in zero","Calculator is loaded and display shows '0'.","1. Click '5'
+2. Click '+'
+3. Click '-' then '5'
+4. Click '='","The number 0 should immediately appear on the calculator display."
+"TC-ADD-006","Addition","Addition of two decimal numbers","Calculator is loaded and display shows '0'.","1. Click '1', '.', '5'
+2. Click '+'
+3. Click '2', '.', '3'
+4. Click '='","The number 3.8 should immediately appear on the calculator display."
+"TC-ADD-007","Addition","Addition of a large number","Calculator is loaded and display shows '0'.","1. Click '9','9','9','9','9','9'
+2. Click '+'
+3. Click '1'
+4. Click '='","The number 1000000 should immediately appear on the calculator display."
+"TC-ADD-008","Addition","Addition with zero (identity property)","Calculator is loaded and display shows '0'.","1. Click '7'
+2. Click '+'
+3. Click '0'
+4. Click '='","The number 7 should immediately appear on the calculator display."
+"TC-SUB-001","Subtraction","Subtraction of two positive integers (positive result)","Calculator is loaded and display shows '0'.","1. Click '9'
+2. Click '-' (ㅡ)
+3. Click '4'
+4. Click '='","The number 5 should immediately appear on the calculator display."
+"TC-SUB-002","Subtraction","Subtraction resulting in zero","Calculator is loaded and display shows '0'.","1. Click '6'
+2. Click '-'
+3. Click '6'
+4. Click '='","The number 0 should immediately appear on the calculator display."
+"TC-SUB-003","Subtraction","Subtraction resulting in a negative number","Calculator is loaded and display shows '0'.","1. Click '3'
+2. Click '-'
+3. Click '8'
+4. Click '='","The number -5 should immediately appear on the calculator display."
+"TC-SUB-004","Subtraction","Subtraction of two decimal numbers","Calculator is loaded and display shows '0'.","1. Click '5', '.', '5'
+2. Click '-'
+3. Click '2', '.', '2'
+4. Click '='","The number 3.3 should immediately appear on the calculator display."
+"TC-SUB-005","Subtraction","Subtraction of a negative from a positive","Calculator is loaded and display shows '0'.","1. Click '5'
+2. Click '-'
+3. Click '-' then '3' (enter -3)
+4. Click '='","The number 8 should immediately appear on the calculator display."
+"TC-SUB-006","Subtraction","Subtract zero from a number (identity property)","Calculator is loaded and display shows '0'.","1. Click '9'
+2. Click '-'
+3. Click '0'
+4. Click '='","The number 9 should immediately appear on the calculator display."
+"TC-MUL-001","Multiplication","Multiplication of two positive integers","Calculator is loaded and display shows '0'.","1. Click '6'
+2. Click '×' (×)
+3. Click '7'
+4. Click '='","The number 42 should immediately appear on the calculator display."
+"TC-MUL-002","Multiplication","Multiplication by zero","Calculator is loaded and display shows '0'.","1. Click '9','9','9'
+2. Click '×'
+3. Click '0'
+4. Click '='","The number 0 should immediately appear on the calculator display."
+"TC-MUL-003","Multiplication","Multiplication by one (identity property)","Calculator is loaded and display shows '0'.","1. Click '8'
+2. Click '×'
+3. Click '1'
+4. Click '='","The number 8 should immediately appear on the calculator display."
+"TC-MUL-004","Multiplication","Multiplication of a positive and a negative number","Calculator is loaded and display shows '0'.","1. Click '6'
+2. Click '×'
+3. Click '-' then '4'
+4. Click '='","The number -24 should immediately appear on the calculator display."
+"TC-MUL-005","Multiplication","Multiplication of two negative numbers (positive result)","Calculator is loaded and display shows '0'.","1. Enter '-5'
+2. Click '×'
+3. Enter '-3'
+4. Click '='","The number 15 should immediately appear on the calculator display."
+"TC-MUL-006","Multiplication","Multiplication of two decimal numbers","Calculator is loaded and display shows '0'.","1. Click '2', '.', '5'
+2. Click '×'
+3. Click '4'
+4. Click '='","The number 10 should immediately appear on the calculator display."
+"TC-MUL-007","Multiplication","Multiplication producing a large result","Calculator is loaded and display shows '0'.","1. Click '9','9'
+2. Click '×'
+3. Click '9','9'
+4. Click '='","The number 9801 should immediately appear on the calculator display."
+"TC-DIV-001","Division","Division of two positive integers (whole result)","Calculator is loaded and display shows '0'.","1. Click '8'
+2. Click '÷'
+3. Click '2'
+4. Click '='","The number 4 should immediately appear on the calculator display."
+"TC-DIV-002","Division","Division resulting in a decimal","Calculator is loaded and display shows '0'.","1. Click '1'
+2. Click '÷'
+3. Click '3'
+4. Click '='","A repeating decimal such as 0.3333 should immediately appear on the calculator display, truncated to the display's maximum precision."
+"TC-DIV-003","Division","Division by zero (invalid input)","Calculator is loaded and display shows '0'.","1. Click '5'
+2. Click '÷'
+3. Click '0'
+4. Click '='","An error message such as 'Error' or 'Infinity' should immediately appear on the calculator display. The application should not freeze or crash."
+"TC-DIV-004","Division","Division of zero by a number","Calculator is loaded and display shows '0'.","1. Click '0'
+2. Click '÷'
+3. Click '5'
+4. Click '='","The number 0 should immediately appear on the calculator display."
+"TC-DIV-005","Division","Division of a negative number by a positive number","Calculator is loaded and display shows '0'.","1. Enter '-9'
+2. Click '÷'
+3. Click '3'
+4. Click '='","The number -3 should immediately appear on the calculator display."
+"TC-DIV-006","Division","Division of a positive number by a negative number","Calculator is loaded and display shows '0'.","1. Click '9'
+2. Click '÷'
+3. Enter '-3'
+4. Click '='","The number -3 should immediately appear on the calculator display."
+"TC-DIV-007","Division","Division of two negative numbers (positive result)","Calculator is loaded and display shows '0'.","1. Enter '-8'
+2. Click '÷'
+3. Enter '-2'
+4. Click '='","The number 4 should immediately appear on the calculator display."
+"TC-DIV-008","Division","Division by decimal number","Calculator is loaded and display shows '0'.","1. Click '5'
+2. Click '÷'
+3. Click '0', '.', '5'
+4. Click '='","The number 10 should immediately appear on the calculator display."
+"TC-DEC-001","Decimal","Entering a valid decimal number","Calculator is loaded and display shows '0'.","1. Click '3'
+2. Click '.'
+3. Click '1','4'","The number 3.14 should immediately appear on the calculator display."
+"TC-DEC-002","Decimal","Pressing decimal point when display is '0'","Calculator is loaded and display shows '0'.","1. Click '0'
+2. Click '.'","The value 0. should immediately appear on the calculator display, allowing the user to continue entering decimal digits."
+"TC-DEC-003","Decimal","Pressing decimal point twice (duplicate dot)","Calculator is loaded and display shows '0'.","1. Click '3'
+2. Click '.'
+3. Click '.' again","The second decimal point should be ignored and 3. should remain on the calculator display — only one decimal point is allowed per number."
+"TC-DEC-004","Decimal","Decimal result after division","Calculator is loaded and display shows '0'.","1. Click '7'
+2. Click '÷'
+3. Click '2'
+4. Click '='","The number 3.5 should immediately appear on the calculator display."
+"TC-PCT-001","Percentage","Percentage of a number","Calculator is loaded and display shows '0'.","1. Click '5','0'
+2. Click '%'","The number 0.5 should immediately appear on the calculator display (50% converted to its decimal equivalent)."
+"TC-PCT-002","Percentage","Calculate percentage in addition context","Calculator is loaded and display shows '0'.","1. Click '2','0','0'
+2. Click '+'
+3. Click '1','0'
+4. Click '%'
+5. Click '='","The number 220 should immediately appear on the calculator display (10% of 200 is 20, and 200 + 20 = 220)."
+"TC-PCT-003","Percentage","Percentage of zero","Calculator is loaded and display shows '0'.","1. Click '0'
+2. Click '%'","The number 0 should immediately appear on the calculator display."
+"TC-CLR-001","Clear/Reset","CE button clears current entry","Calculator is loaded and display shows '0'.","1. Click '5','6','7'
+2. Click 'CE'","The display should immediately reset to 0. Any operator or first operand already entered should be retained so the calculation can continue."
+"TC-CLR-002","Clear/Reset","CE button clears mid-calculation entry without losing first operand","Calculator is loaded, user has entered '5 +'.","1. Click '5'
+2. Click '+'
+3. Click '9','9'
+4. Click 'CE'
+5. Click '3'
+6. Click '='","The number 8 should immediately appear on the calculator display, because CE cleared only the second entry (99). The original 5 and the plus sign were kept, so 5 + 3 = 8."
+"TC-CLR-003","Clear/Reset","Backspace (←) deletes the last digit entered","Calculator is loaded and display shows '0'.","1. Click '1','2','3'
+2. Click '←' (backspace)","The number 12 should immediately appear on the calculator display. Only the last digit 3 is removed by the backspace key."
+"TC-CLR-004","Clear/Reset","Backspace (←) on single digit resets display to '0'","Calculator is loaded and display shows '0'.","1. Click '5'
+2. Click '←'","The number 0 should immediately appear on the calculator display after the only digit is deleted."
+"TC-CLR-005","Clear/Reset","CE after obtaining a result clears and resets for new input","Calculator has just displayed a result (e.g., '8' from 5+3).","1. Click 'CE'","The number 0 should immediately appear on the calculator display and the calculator should be ready for a completely new calculation."
+"TC-BODMAS-001","BODMAS","Chained operations follow left-to-right evaluation (no brackets)","Calculator is loaded and display shows '0'.","1. Click '2'
+2. Click '+'
+3. Click '3'
+4. Click '×'
+5. Click '4'
+6. Click '='","If evaluated left to right, the number 20 should immediately appear on the calculator display (2+3=5, then 5×4=20). If standard operator precedence is applied, the number 14 should appear (3×4=12, then 2+12=14). The actual behaviour should be noted and documented."
+"TC-BODMAS-002","BODMAS","Consecutive same-operator chaining","Calculator is loaded and display shows '0'.","1. Click '1','0'
+2. Click '-'
+3. Click '3'
+4. Click '-'
+5. Click '2'
+6. Click '='","The number 5 should immediately appear on the calculator display (10−3=7, then 7−2=5)."
+"TC-BODMAS-003","BODMAS","Chained multiplication and division","Calculator is loaded and display shows '0'.","1. Click '8'
+2. Click '÷'
+3. Click '2'
+4. Click '×'
+5. Click '4'
+6. Click '='","The number 16 should immediately appear on the calculator display (8÷2=4, then 4×4=16, evaluated left to right)."
+"TC-CONS-001","Consecutive Operations","Using previous result in next calculation","Calculator is loaded. A calculation has been completed and result is displayed.","1. Click '4' + '×' + '3' + '='
+   (display shows '12')
+2. Click '+'
+3. Click '8'
+4. Click '='","The number 20 should immediately appear on the calculator display, because the previous result 12 is carried forward and 12 + 8 = 20."
+"TC-CONS-002","Consecutive Operations","Pressing '=' repeatedly after a calculation","Calculator shows result after '5 + 3 = 8'.","1. Click '=' again
+2. Click '=' a third time","Either the next repeated result (11, then 14, and so on) should immediately appear on the calculator display with each equals press, or the display should remain unchanged at 8. The actual behaviour should be noted."
+"TC-CONS-003","Consecutive Operations","Switching operator mid-entry","Calculator is loaded and display shows '0'.","1. Click '5'
+2. Click '+'
+3. Click '×'
+4. Click '3'
+5. Click '='","The number 15 should immediately appear on the calculator display, because the last operator pressed (×) is used and 5 × 3 = 15."
+"TC-INV-001","Invalid Input","No first operand — pressing operator then equals","Calculator is loaded and display shows '0'.","1. Click '+'
+2. Click '='","The number 0 should immediately appear on the calculator display, or the incomplete input should be handled gracefully without any error or crash."
+"TC-INV-002","Invalid Input","Pressing '=' without any input","Calculator is loaded and display shows '0'.","1. Click '=' immediately","The number 0 should remain on the calculator display. Nothing should change and there should be no crash."
+"TC-INV-003","Invalid Input","Division by zero with decimal divisor approaching zero","Calculator is loaded and display shows '0'.","1. Click '1'
+2. Click '÷'
+3. Click '0', '.', '0'
+4. Click '='","An error message such as 'Error' or 'Infinity' should immediately appear on the calculator display. The application should not crash."
+"TC-INV-004","Invalid Input","Very long number input (overflow check)","Calculator is loaded and display shows '0'.","1. Click digit '1' repeatedly 20 times","Either the digit input should stop once the maximum length is reached, or the full number should appear correctly on the calculator display. No overflow or crash should occur."
+"TC-INV-005","Invalid Input","Starting input with multiple zeros","Calculator is loaded and display shows '0'.","1. Click '0'
+2. Click '0'
+3. Click '0'
+4. Click '5'","The number 5 should immediately appear on the calculator display. Leading zeros should not accumulate."
+"TC-INV-006","Invalid Input","Pressing an operator with no second operand before '='","Calculator is loaded and display shows '0'.","1. Click '7'
+2. Click '+'
+3. Click '='","The number 14 or 7 should immediately appear on the calculator display. The application should handle the missing second operand gracefully without any error."
+"TC-UI-001","UI/Display","Initial display state on page load","Open https://dunizb.github.io/sCalc/ in a browser for the first time.","1. Observe the calculator display immediately after the page loads.","The number 0 should immediately appear on the calculator display as soon as the page loads. All buttons — digits 0 to 9, operators, CE, backspace, percent, decimal point, and equals — should be visible and clickable."
+"TC-UI-002","UI/Display","Button labels are correct and visible","Calculator is loaded.","1. Visually inspect all buttons on the calculator.","All buttons should show correct labels on the calculator display panel: digits 0 to 9, the four operators (÷, ×, −, +), equals, decimal point, CE, backspace arrow, and percent. All labels should be clearly readable."
+"TC-UI-003","UI/Display","Display updates dynamically as digits are pressed","Calculator is loaded and display shows '0'.","1. Click '1'
+2. Click '2'
+3. Click '3'","Updated digits should immediately appear on the calculator display with each button click — showing 1, then 12, then 123 in sequence. No digits should be missing or delayed."
+"TC-UI-004","UI/Display","History panel opens and records calculations","Calculator is loaded. At least one calculation has been performed.","1. Perform '3 + 4 ='
+2. Click the history icon (clock icon at top)","The history panel should open and the completed calculation '3 + 4 = 7' should immediately appear in the history list in the order it was performed."
+"TC-UI-005","UI/Display","Clear history functionality","Calculator history has at least one recorded entry. History panel is open.","1. Click the trash/clear icon inside the history panel","All entries should be removed and an empty state should immediately appear in the history panel."
+"TC-UI-006","UI/Display","Theme switching (skin change)","Calculator is loaded with default theme.","1. Click the theme toggle icon (top-right paint icon)","The updated visual theme should immediately appear on the calculator. All buttons should continue to work correctly after the theme change."
+"TC-UI-007","UI/Display","Calculator is responsive and usable on mobile viewport","Calculator is loaded in a mobile browser or browser DevTools set to mobile viewport (375px wide).","1. Resize browser to 375×667 (iPhone SE)
+2. Perform a basic calculation: '5 + 3 ='","All buttons should fit on the calculator display without horizontal scrolling at 375 pixels wide. The display should be readable and the result 8 should immediately appear after the calculation."
+"TC-MIX-001","Mixed","Mixed operation: addition then multiplication","Calculator is loaded and display shows '0'.","1. Click '2' + '+' + '3' + '='
+   (result: 5)
+2. Click '×'
+3. Click '4'
+4. Click '='","The number 20 should immediately appear on the calculator display, because the previous result 5 is multiplied by 4."
+"TC-MIX-002","Mixed","Negative decimal arithmetic","Calculator is loaded and display shows '0'.","1. Enter '-1.5'
+2. Click '×'
+3. Click '2'
+4. Click '='","The number -3 should immediately appear on the calculator display."
+"TC-MIX-003","Mixed","Complex multi-step calculation","Calculator is loaded and display shows '0'.","1. Click '1','0','0'
+2. Click '+'
+3. Click '5','0'
+4. Click '÷'
+5. Click '5'
+6. Click '='","The number 30 should immediately appear on the calculator display (100 + 50 = 150, then 150 ÷ 5 = 30, evaluated left to right)."
+"TC-MIX-004","Mixed","Backspace during decimal entry","Calculator is loaded and display shows '0'.","1. Click '3', '.', '1', '4'
+2. Click '←'","The number 3.1 should immediately appear on the calculator display. Only the last digit 4 is removed by the backspace, leaving the decimal point intact."
+"TC-MIX-005","Mixed","Full workflow: calculate, clear, calculate again","Calculator is loaded and display shows '0'.","1. Click '9' + '×' + '9' + '=' → result '81'
+2. Click 'CE'
+3. Click '5' + '+' + '5' + '='","The number 81 should immediately appear after the first calculation. The number 0 should immediately appear after pressing CE. The number 10 should immediately appear after the second calculation."
